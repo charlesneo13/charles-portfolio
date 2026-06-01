@@ -8,29 +8,57 @@ body {
     background-color: #051424;
 }
 
+
 .top-nav {
     font-family: "Inter";
     color: white;
-    padding: 1.5em;
     display: flex;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
+    position: sticky;
+    top: 0;
+    padding: 0 5rem;
+    height: 13vh;
+    width: 100%;
 }
 
 .nav-links {
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    border: 1px solid red;
+    justify-content: flex-start;
+    /*border: 1px solid red;*/
+    width: 50%;
+    align-items: center;
+}
 
+.nav-link {
+    padding: 0 2rem;
 }
 
 .hero-title {
     display: flex;
-    align-items: flex-start;
-     border: 1px solid red;
+    justify-content: flex-start;
+    align-items: center;
+    /*border: 1px solid red;*/
+    width: 50%;
+}
+
+.nav-button {
+    width: 8vw;
+    height: 6vh;
+    border-radius: 5px;
 }
 
 a {
     text-decoration: none;
+    color: white;
 }
 
+#Home {
+    padding: 0 5rem;
+    width: 100vw;
+    border: 1px solid red;
+    color: white;
+}
+
+#Home h1 {
+    margin: 1em 0;
+}
