@@ -8,24 +8,30 @@ body {
     background-color: #051424;
 }
 
-
 .top-nav {
-    font-family: "Inter";
+    font-family: 'Inter', 'Arial';
     color: white;
     display: flex;
     /*border: 1px solid red;*/
+    border-bottom: 1px solid rgba(255,255,255,0.08);
     position: sticky;
     top: 0;
-    padding: 0 5rem;
+    max-width: 100%;
+    padding: 0 10rem;
     height: 13vh;
-    width: 100%;
+    width: 100vw;
+    background-color: #051424;
 }
 
 .nav-links {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #d4d8e1;
     /*border: 1px solid red;*/
-    width: 50%;
+    width: 75%;
     align-items: center;
 }
 
@@ -37,14 +43,23 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    font-size: 0.75em;
     /*border: 1px solid red;*/
-    width: 50%;
+    width: 25%;
 }
 
 .nav-button {
     width: 8vw;
     height: 6vh;
     border-radius: 5px;
+    background-color: #d4d8e1;
+    color: #374151;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.9rem;
+    border: none;
+    outline: none;
 }
 
 a {
@@ -53,12 +68,122 @@ a {
 }
 
 #Home {
-    padding: 0 5rem;
-    width: 100vw;
-    border: 1px solid red;
+    width: 75vw;
+    margin: 2em 10rem 6rem;
+    /*border: 1px solid red;*/
     color: white;
 }
 
 #Home h1 {
-    margin: 1em 0;
+    margin: 0.5em 0;
+}
+
+.intro {
+    font-family: "Geist","Arial";
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #D7E0EC;
+}
+
+.title {
+    font-family: "JetBrains Mono","Arial";
+    font-size: 1rem;
+    font-weight: 500;
+    color:#B8C0CC;
+    letter-spacing: 0.08em;
+}
+
+.description {
+    font-family: "Inter", sans-serif;
+    font-size: 1.4rem;
+    color:#B8C0CC;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.view-projects {
+    width: 12.5vw;
+    height: 10vh;
+    border-radius: 5px;
+    background-color: #d1d5db;
+    color: #2f3744;
+    font-weight: 500;
+    font-family: "Inter", monospace;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    margin: 3em 0;
+}
+
+.get-in-touch {
+    width: 12.5vw;
+    height: 10vh;
+    border-radius: 5px;
+    background: transparent;
+    color: #d7e0ec;
+    font-weight: 600;
+    font-family: "Inter", monospace;
+    font-size: 1em;
+    border: 1px solid rgba(255,255,255,0.4);
+    outline: none;
+    margin-left: 1em;
+}
+
+#About {
+    width: 75vw;
+    margin: 2em 10rem 6rem;
+    padding: 6em 0 3em;
+    /*border: 1px solid red;*/
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(255,255,255,0.08);
+}
+
+.about-intro {
+    font-family: "Inter", sans-serif;
+    font-size: 1.3rem;
+    padding: 1em 0;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #dbe4f0;
+}
+
+#About .about.right p {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    padding: 0.5em 0;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #b6c0cf;
+}
+
+.skills {
+    width: 100vw;
+    background-color: #010f1f;
+}
+
+#Skills {
+    width: 75%;
+    margin: 2em 10rem 6rem;
+    padding: 8em 0 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.skills-title {
+    grid-column: 1 / 5;
+    padding-bottom: 3em;
+}
+
+.my-skills {
+    background-color: #0d1c2d;
+    height: 17em;
+    text-align: center;
 }
